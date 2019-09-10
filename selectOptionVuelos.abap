@@ -64,6 +64,8 @@ IF sy-subrc = 0.
 
     WRITE: /, wa_sflight-carrid.
 
+"LEO DE UNA FORMA SIMILAR LO QUE BUSQUE EN FOR ALL ENTRIES"
+"PRIMERO GUARDO LA INFO DE SFLIGHT EN SU WA Y DESPUES HAGO EL READ TABLE PARA SCARR Y LO GUARDO EN SU WA"
     CLEAR: wa_scarr.
     READ TABLE it_scarr into wa_scarr
     WITH KEY carrid = wa_sflight-carrid
