@@ -48,11 +48,12 @@ DATA: wa_file         TYPE ty_file,
 *&---------------------------------------------------------------------*
 *& DECLARACION SELECCION DE PANTALLA
 *&---------------------------------------------------------------------*
-START-OF-SELECTION.
 
 SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-001.
   PARAMETERS: p_file TYPE STRING DEFAULT 'C:\Users\T11641.Training16\Documents\prov.txt'.
  SELECTION-SCREEN END OF BLOCK b1.
+ 
+ START-OF-SELECTION.
 
  PERFORM f_leer_file.
 
